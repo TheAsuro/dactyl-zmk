@@ -5,8 +5,8 @@
 
 // Modifiers
 #define HYPER(key)   LS(LC(LA(LG(key)))) // LSHFT+LCTRL+LALT+LGUI
-#define MEH(key)     LS(LC(LA(key))) // LSHFT+LCTRL+LALT
-#define GC(key)      LG(LC(key)) // LGUI+LCTRL
+#define LS(LC(LA(key)))     LS(LC(LA(key))) // LSHFT+LCTRL+LALT
+#define LG(LC(key))      LG(LC(key)) // LGUI+LCTRL
 
 &kscan0 {
        debounce-press-ms = <30>;
@@ -119,7 +119,7 @@
 &kp F12       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
 &mo 6      &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &none         &none         &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &mo 6
 &trans        &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &trans
-&trans        &kp LG(TAB)   &kp GC(LEFT)  &kp GC(RIGHT) &kp MEH(N)    &kp MEH(M)    &kp MEH(N)    &kp MEH(M)    &kp GC(LEFT)  &kp GC(RIGHT) &kp LG(TAB)   &trans
+&trans        &kp LG(TAB)   &kp LG(LC(LEFT))  &kp LG(LC(RIGHT)) &kp LS(LC(LA(N)))    &kp LS(LC(LA(M)))    &kp LS(LC(LA(N)))    &kp LS(LC(LA(M)))    &kp LG(LC(LEFT))  &kp LG(LC(RIGHT)) &kp LG(TAB)   &trans
                                                                       &kp HOME      &kp PG_UP
                                           &trans        &lm 0 RALT &kp END       &kp PG_DN     &trans        &trans
                      >;
