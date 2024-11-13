@@ -3,28 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define 0         0 // Default layer
-#define 1         1 // Mac overlay
-#define 2          2 // Single Hand layer
-#define 3         3 // Single Hand Mirror layer
-#define 4         4 // Lower layer
-#define 5         5 // Gaming overlay
-#define 6         6 // Settings layer
-
 // Modifiers
 #define HYPER(key)   LS(LC(LA(LG(key)))) // LSHFT+LCTRL+LALT+LGUI
 #define MEH(key)     LS(LC(LA(key))) // LSHFT+LCTRL+LALT
 #define GC(key)      LG(LC(key)) // LGUI+LCTRL
-
-// Shortcuts
-#define SP           SPACE
-#define ALTGR        RALT
-
-#define BRI_DN       C_BRIGHTNESS_DEC
-#define BRI_UP       C_BRIGHTNESS_INC
-#define VOL_UP       C_VOLUME_UP
-#define VOL_DN       C_VOLUME_DOWN
-
 
 &kscan0 {
        debounce-press-ms = <30>;
@@ -111,9 +93,9 @@
 &trans        &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J         &kp K         &kp L         &kp SEMI      &lt 4 CAPS
 &kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
               &kp GRAVE     &kp SQT       &kp LCTRL     &kp LALT                                  &kp LALT      &kp RCTRL     &kp LBKT      &kp RBKT
-                                                        &kp ALTGR     &kp ESC       &kp ESC       &kp ALTGR
+                                                        &kp RALT     &kp ESC       &kp ESC       &kp RALT
                                                                       &bsdel        &bsdel
-                                          &lt 3 SP   &kp RET       &kp LGUI      &kp LGUI      &kp RET       &lt 3 SP
+                                          &lt 3 SPACE   &kp RET       &kp LGUI      &kp LGUI      &kp RET       &lt 3 SP
                      >;
               };
 
@@ -138,8 +120,6 @@
 &mo 6      &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &none         &none         &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &mo 6
 &trans        &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &trans
 &trans        &kp LG(TAB)   &kp GC(LEFT)  &kp GC(RIGHT) &kp MEH(N)    &kp MEH(M)    &kp MEH(N)    &kp MEH(M)    &kp GC(LEFT)  &kp GC(RIGHT) &kp LG(TAB)   &trans
-              &none         &kp C_PP      &kp C_PREV    &kp C_NEXT                                &kp VOL_DN    &kp VOL_UP    &kp C_MUTE    &none
-                                                        &kp BRI_UP    &kp BRI_DN    &kp PSCRN     &kp INS
                                                                       &kp HOME      &kp PG_UP
                                           &trans        &lm 0 RALT &kp END       &kp PG_DN     &trans        &trans
                      >;
@@ -155,7 +135,7 @@
               &kp COMMA     &kp DOT       &trans        &trans                                    &trans        &trans        &trans        &trans
                                                         &kp I         &kp M         &trans        &trans
                                                                       &kp ENTER     &trans
-                                          &kp SP        &kp LCTRL     &kp LALT      &trans        &trans        &trans
+                                          &kp SPACE        &kp LCTRL     &kp LALT      &trans        &trans        &trans
                      >;
               };
 
