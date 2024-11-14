@@ -2,11 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Modifiers
-
-#define HYPER(key)   LS(LC(LA(LG(key)))) // LSHFT+LCTRL+LALT+LGUI
-#define LS(LC(LA(key)))     LS(LC(LA(key))) // LSHFT+LCTRL+LALT
-#define LG(LC(key))      LG(LC(key)) // LGUI+LCTRL
-
 &kscan0 {
     debounce-press-ms = <30>;
     debounce-release-ms = <30>;
