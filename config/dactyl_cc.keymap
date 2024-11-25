@@ -60,12 +60,12 @@
 
         symbol_layer {
             bindings = <
-&kp PRINTSCREEN  &trans       &trans         &trans        &trans       &trans                           &trans  &kp N7  &kp N8  &kp N9      &trans     &kp RA(Y)
-&kp TILDE        &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT  &kp CARET                        &trans  &kp N4  &kp N5  &kp N6      &kp RA(P)  &kp RA(Q)
-&trans           &trans       &kp AMPERSAND  &kp ASTERISK  &trans       &trans                           &mo 3   &kp N1  &kp N2  &kp N3      &trans     &trans
-                              &trans         &trans                                                                      &kp N0  &kp PERIOD
-                                                           &trans       &trans     &trans        &trans  &trans  &trans
-                                                                        &trans     &kp LEFT_GUI  &trans  &trans
+&kp TILDE  &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                           &trans     &kp N7  &kp N8  &kp N9      &trans         &kp RA(Y)
+&kp HOME   &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT      &kp END                             &kp SPACE  &kp N4  &kp N5  &kp N6      &kp RA(P)      &kp RA(Q)
+&trans     &trans       &kp PG_DN      &kp PG_UP     &kp AMPERSAND  &kp ASTERISK                        &mo 3      &kp N1  &kp N2  &kp N3      &kp AMPERSAND  &kp ASTRK
+                        &kp AMPERSAND  &kp ASTERISK                                                                        &kp N0  &kp PERIOD
+                                                     &trans         &trans        &trans        &trans  &trans     &trans
+                                                                    &trans        &kp LEFT_GUI  &trans  &trans
             >;
         };
 
