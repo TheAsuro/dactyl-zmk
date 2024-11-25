@@ -49,12 +49,12 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo            &kp Q  &kp W                 &kp E                  &kp R    &kp T                                             &kp Y            &kp U   &kp I             &kp O              &kp P          &kp EQUAL
-&kp TAB              &kp A  &kp S                 &kp D                  &kp F    &kp G                                             &kp H            &kp J   &kp K             &kp L              &kp SEMICOLON  &kp APOSTROPHE
-&mt LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V    &kp B                                             &kp N            &kp M   &kp COMMA         &kp DOT            &kp FSLH       &mt RCTRL MINUS
-                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                         &kp ESC  &kp LEFT_SHIFT  &kp RET       &kp SPACE           &kp RIGHT_SHIFT  &bsdel
-                                                                                  &mo 2           &kp LEFT_ALT  &mt LCTRL LEFT_WIN  &mo 1
+&excl_apo            &kp Q  &kp W                 &kp E                  &kp R    &kp T                                         &kp Y      &kp U   &kp I             &kp O              &kp P          &kp EQUAL
+&kp TAB              &kp A  &kp S                 &kp D                  &kp F    &kp G                                         &kp H      &kp J   &kp K             &kp L              &kp SEMICOLON  &kp APOSTROPHE
+&mt LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V    &kp B                                         &kp N      &kp M   &kp COMMA         &kp DOT            &kp FSLH       &mt RCTRL MINUS
+                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                         &kp ESC  &kp TAB  &mt LSHFT ENTER  &kp RSHFT           &kp SPACE  &bsdel
+                                                                                  &mo 2    &kp LEFT_ALT     &mt LCTRL LEFT_WIN  &mo 1
             >;
         };
 
