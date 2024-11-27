@@ -42,6 +42,20 @@
               * Example:
               *  `&lm NUM_LAYER LSHIFT`
               */
+
+        infinity: infinity {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "INFINITY";
+        };
     };
 
     keymap {
@@ -72,12 +86,12 @@
 
         function_layer {
             bindings = <
-&kp F1           &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                  &kp F7        &kp F8              &kp F9          &kp F10        &kp F11              &kp F12
-&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans                  &kp HOME      &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW      &kp END
-&mo 3            &trans  &trans  &trans  &trans  &trans                  &trans        &kp LC(LEFT_ARROW)  &kp PG_DN       &kp PG_UP      &kp LC(RIGHT_ARROW)  &trans
-                         &trans  &trans                                                                    &kp LA(LEFT)    &kp LA(RIGHT)
-                                         &trans  &trans  &trans  &trans  &trans        &trans
-                                                 &trans  &trans  &trans  &kp LEFT_GUI
+&kp F1           &kp F2     &kp F3  &kp F4  &kp F5  &kp F6                  &kp F7        &kp F8              &kp F9          &kp F10        &kp F11              &kp F12
+&kp PRINTSCREEN  &infinity  &trans  &trans  &trans  &trans                  &kp HOME      &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW      &kp END
+&mo 3            &trans     &trans  &trans  &trans  &trans                  &trans        &kp LC(LEFT_ARROW)  &kp PG_DN       &kp PG_UP      &kp LC(RIGHT_ARROW)  &trans
+                            &trans  &trans                                                                    &kp LA(LEFT)    &kp LA(RIGHT)
+                                            &trans  &trans  &trans  &trans  &trans        &trans
+                                                    &trans  &trans  &trans  &kp LEFT_GUI
             >;
         };
 
