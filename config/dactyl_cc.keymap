@@ -119,5 +119,16 @@
                                                                        &trans      &trans  &trans  &trans
             >;
         };
+
+        epic_gamer_layer {
+            bindings = <
+&kp N1  &kp TAB           &kp Q  &kp W  &kp E   &kp R                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp N2  &kp LEFT_SHIFT    &kp A  &kp S  &kp D   &kp F                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp N3  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C   &kp V                      &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp I  &kp M                                                     &trans  &trans
+                                        &trans  &kp SPACE  &trans  &trans  &trans  &trans
+                                                &trans     &trans  &trans  &trans
+            >;
+        };
     };
 };
