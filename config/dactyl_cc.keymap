@@ -29,6 +29,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        apo_quot: apo_quot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APO_QUOT";
+            bindings = <&apo>, <&qout>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -71,6 +80,20 @@
 
             label = "SQRT";
         };
+
+        apo: apo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp SPACE>;
+            label = "APO";
+        };
+
+        qout: qout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(APOS) &kp SPACE>;
+            label = "QOUT";
+        };
     };
 
     keymap {
@@ -80,7 +103,7 @@
             display-name = "Default";
             bindings = <
 &excl_apo            &kp Q  &kp W                 &kp E                  &kp R   &kp T                                           &kp Y      &kp U            &kp I             &kp O              &kp P          &kp EQUAL
-&kp TAB              &kp A  &kp S                 &kp D                  &kp F   &kp G                                           &kp H      &kp J            &kp K             &kp L              &kp SEMICOLON  &kp APOSTROPHE
+&kp TAB              &kp A  &kp S                 &kp D                  &kp F   &kp G                                           &kp H      &kp J            &kp K             &kp L              &kp SEMICOLON  &apo_quot
 &mt LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                           &kp N      &kp M            &kp COMMA         &kp DOT            &kp FSLH       &mt RCTRL MINUS
                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                          &bsdel  &kp ENTER     &kp LSHFT              &bsdel     &kp SPACE  &kp RIGHT_SHIFT
