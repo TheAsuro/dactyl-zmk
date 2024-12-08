@@ -104,6 +104,13 @@
             bindings = <&kp LS(APOS) &kp SPACE>;
             label = "QOUT";
         };
+
+        ctrl1: ctrl1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mo 1 &kp LCTRL>;
+            label = "CTRL1";
+        };
     };
 
     keymap {
@@ -117,7 +124,7 @@
 &mt LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                           &kp N      &kp M            &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                          &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1      &kp SPACE  &kp RIGHT_SHIFT
-                                                                                 &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &kp LCTRL  &mo 1
+                                                                                 &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &kp LCTRL  &ctrl1
             >;
         };
 
