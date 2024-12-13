@@ -105,11 +105,17 @@
             label = "QOUT";
         };
 
-        ctrl1: ctrl1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 1 &kp LCTRL>;
-            label = "CTRL1";
+        modl: modl {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "MODL";
         };
     };
 
@@ -119,12 +125,12 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W                 &kp E                  &kp R   &kp T                                           &kp Y      &kp U            &kp I             &kp O              &kp P          &kp EQUAL
-&kp TAB               &kp A  &kp S                 &kp D                  &kp F   &kp G                                           &kp H      &kp J            &kp K             &kp L              &kp SEMICOLON  &apo_quot
-&hwu LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                           &kp N      &kp M            &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
-                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                          &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1      &kp SPACE  &kp RIGHT_SHIFT
-                                                                                  &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &kp LCTRL  &ctrl1
+&excl_apo             &kp Q  &kp W                 &kp E                  &kp R   &kp T                                           &kp Y          &kp U            &kp I             &kp O              &kp P          &kp EQUAL
+&kp TAB               &kp A  &kp S                 &kp D                  &kp F   &kp G                                           &kp H          &kp J            &kp K             &kp L              &kp SEMICOLON  &apo_quot
+&hwu LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                           &kp N          &kp M            &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
+                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                          &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1      &kp SPACE      &kp RIGHT_SHIFT
+                                                                                  &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &kp LCTRL  &modl 1 LCTRL
             >;
         };
 
