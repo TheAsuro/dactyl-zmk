@@ -125,34 +125,34 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W                 &kp E                  &kp R   &kp T                                           &kp Y          &kp U            &kp I             &kp O              &kp P          &kp EQUAL
-&kp TAB               &kp A  &kp S                 &kp D                  &kp F   &kp G                                           &kp H          &kp J            &kp K             &kp L              &kp SEMICOLON  &apo_quot
-&hwu LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                           &kp N          &kp M            &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
+&excl_apo             &kp Q  &kp W                 &kp E                  &kp R   &kp T                                               &kp Y      &kp U            &kp I             &kp O              &kp P          &kp EQUAL
+&kp TAB               &kp A  &kp S                 &kp D                  &kp F   &kp G                                               &kp H      &kp J            &kp K             &kp L              &kp SEMICOLON  &apo_quot
+&hwu LCTRL BACKSLASH  &kp Z  &kp X                 &kp C                  &kp V   &kp B                                               &kp N      &kp M            &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                          &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1      &kp SPACE      &kp RIGHT_SHIFT
-                                                                                  &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &kp LCTRL  &modl 1 LCTRL
+                                                                          &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1          &kp SPACE  &kp RIGHT_SHIFT
+                                                                                  &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &modl 1 LCTRL  &kp LCTRL
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp TILDE              &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET                     &kp MINUS  &kp N7  &kp N8  &kp N9      &kp RA(S)  &kp RA(Y)
-&kp HOME               &kp LEFT     &kp DOWN   &kp UP      &kp RIGHT      &kp END                       &kp SPACE  &kp N4  &kp N5  &kp N6      &kp RA(P)  &kp RA(Q)
-&kp RA(LS(SEMICOLON))  &kp RA(N5)   &kp PG_DN  &kp PG_UP   &kp AMPERSAND  &kp ASTERISK                  &mo 3      &kp N1  &kp N2  &kp N3      &kp F      &trans
-                                    &trans     &trans                                                                      &kp N0  &kp PERIOD
-                                                           &trans         &trans        &trans  &trans  &trans     &trans
-                                                                          &trans        &trans  &trans  &trans
+&kp TILDE              &kp AT_SIGN  &kp HASH       &kp DOLLAR   &kp PERCENT    &kp CARET                     &kp MINUS  &kp N7  &kp N8  &kp N9      &kp RA(S)  &kp RA(Y)
+&kp HOME               &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT      &kp END                       &kp SPACE  &kp N4  &kp N5  &kp N6      &kp RA(P)  &kp RA(Q)
+&kp RA(LS(SEMICOLON))  &kp RA(N5)   &kp LC(Z)      &kp LC(Y)    &kp AMPERSAND  &kp ASTERISK                  &mo 3      &kp N1  &kp N2  &kp N3      &kp F      &trans
+                                    &kp PAGE_DOWN  &kp PAGE_UP                                                                  &kp N0  &kp PERIOD
+                                                                &trans         &trans        &trans  &trans  &trans     &trans
+                                                                               &trans        &trans  &trans  &trans
             >;
         };
 
         function_layer {
             bindings = <
-&kp N1  &kp N2           &kp N3                &kp N4                &kp N5      &kp N6                  &kp N7        &kp N8     &kp N9     &kp N0     &trans   &trans
-&kp F1  &kp F2           &kp F3                &kp F4                &kp F5      &kp F6                  &kp F7        &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
-&mo 3   &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DELETE  &kp Y                   &trans        &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans   &trans
-                         &sqrt                 &infinity                                                                          &trans     &trans
-                                                                     &trans      &trans  &trans  &trans  &trans        &trans
-                                                                                 &trans  &trans  &trans  &kp LEFT_GUI
+&kp N1  &kp N2  &kp N3           &kp N4      &kp N5   &kp Y                    &kp N7        &kp N8     &kp N9                &kp N0                &trans   &trans
+&kp F1  &kp F2  &kp F3           &kp F4      &kp F5   &kp F6                   &kp F7        &kp F8     &kp F9                &kp F10               &kp F11  &kp F12
+&kp F7  &kp F8  &kp F9           &kp F10     &kp F11  &kp F12                  &trans        &mkp LCLK  &mkp MCLK             &mkp RCLK             &trans   &trans
+                &kp PRINTSCREEN  &kp DELETE                                                             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+                                             &trans   &trans   &trans  &trans  &trans        &trans
+                                                      &trans   &trans  &trans  &kp LEFT_GUI
             >;
         };
 
