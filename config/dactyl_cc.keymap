@@ -141,11 +141,11 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R   &kp T                                               &kp Y      &kp U      &kp I             &kp O              &kp P          &kp EQUAL
-&kp TAB               &kp A  &kp S       &kp D                  &kp F   &kp G                                               &kp H      &kp J      &kp K             &kp L              &kp SEMICOLON  &apo_quot
-&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                               &kp N      &kp M      &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
-                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1          &kp SPACE  &shiftmod
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R   &kp T                                               &kp Y        &kp U      &kp I             &kp O              &kp P          &kp EQUAL
+&kp TAB               &kp A  &kp S       &kp D                  &kp F   &kp G                                               &kp H        &kp J      &kp K             &kp L              &kp SEMICOLON  &apo_quot
+&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                               &kp N        &kp M      &kp COMMA         &kp DOT            &kp FSLH       &kp MINUS
+                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                &bsdel  &lt 2 ENTER   &hwu LSHFT SPACE       &mo 1          &lt 2 SPACE  &shiftmod
                                                                         &lt 1 ESCAPE  &mt LEFT_ALT LEFT_GUI  &modl 1 LCTRL  &kp LCTRL
             >;
         };
