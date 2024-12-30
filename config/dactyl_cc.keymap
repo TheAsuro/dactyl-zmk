@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFTMOD";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sl 4>;
+            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sl 5>;
         };
 
         bracket_y: bracket_y {
@@ -147,8 +147,8 @@
 &kp TAB               &kp A  &kp S       &kp D                  &kp F   &kp G                                                &kp H            &kp J      &kp K             &kp L              &kp SEMICOLON  &kp SLASH
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                                &kp N            &kp M      &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &bsdel  &lt 3 ENTER   &hwu LSHFT SPACE        &mo 2          &lt 3 SPACE      &shiftmod
-                                                                        &lt 2 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &modl 2 LCTRL  &mt LCTRL ENTER
+                                                                &bsdel  &lt 4 ENTER   &hwu LSHFT SPACE        &mo 3          &lt 4 SPACE      &shiftmod
+                                                                        &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &modl 3 LCTRL  &mt LCTRL ENTER
             >;
         };
 
@@ -160,6 +160,17 @@
                           &kp NUMBER_4  &kp M                                                     &trans  &trans
                                                &trans  &kp SPACE  &trans  &trans  &trans  &trans
                                                        &trans     &trans  &trans  &to 0
+            >;
+        };
+
+        colemak {
+            bindings = <
+&kp EQUAL  &kp Q  &kp W         &kp F         &kp P   &kp B                   &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp SQT
+&kp LCTRL  &kp A  &kp R         &kp S         &kp T   &kp G                   &kp M   &kp N   &kp E      &kp I     &kp O     &kp RCTRL
+&kp LALT   &kp Z  &kp X         &kp C         &kp D   &kp V                   &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp LALT
+                  &kp LS(LPAR)  &kp LS(RPAR)                                                  &kp LBKT   &kp RBKT
+                                              &trans  &trans  &trans  &trans  &trans  &trans
+                                                      &trans  &trans  &trans  &trans
             >;
         };
 
@@ -178,7 +189,7 @@
             bindings = <
 &kp N1  &kp N2  &kp N3        &kp N4      &kp N5   &kp NUMBER_6                  &kp N7        &kp N8   &kp N9                &kp N0                &trans   &kp PSCRN
 &kp F1  &kp F2  &kp F3        &kp F4      &kp F5   &kp F6                        &kp F7        &kp F8   &kp F9                &kp F10               &kp F11  &kp F12
-&kp F7  &kp F8  &kp F9        &kp F10     &kp F11  &kp F12                       &kp F13       &kp F14  &kp F15               &kp F16               &trans   &sl 4
+&kp F7  &kp F8  &kp F9        &kp F10     &kp F11  &kp F12                       &kp F13       &kp F14  &kp F15               &kp F16               &trans   &sl 5
                 &kp NUMBER_0  &kp DELETE                                                                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
                                           &trans   &trans        &trans  &trans  &trans        &trans
                                                    &trans        &trans  &trans  &kp LEFT_GUI
@@ -189,7 +200,7 @@
             bindings = <
 &soft_off  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans                      &soft_off  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans
 &trans     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans                      &trans     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans
-&trans     &to 1          &trans         &trans         &out OUT_TOG   &bt BT_CLR                  &trans     &to 1          &trans         &trans         &out OUT_TOG   &bt BT_CLR
+&to 0      &to 1          &to 2          &trans         &out OUT_TOG   &bt BT_CLR                  &trans     &to 1          &trans         &trans         &out OUT_TOG   &bt BT_CLR
                           &sys_reset     &bootloader                                                                         &sys_reset     &bootloader
                                                         &trans         &trans      &trans  &trans  &trans     &trans
                                                                        &trans      &trans  &trans  &trans
