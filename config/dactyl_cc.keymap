@@ -11,6 +11,8 @@
     debounce-release-ms = <30>;
 };
 
+&lt { flavor = "hold-preferred"; };
+
 / {
     behaviors {
         bsdel: backspace_delete {
