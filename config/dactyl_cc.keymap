@@ -66,6 +66,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        tp: tap_preferred_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "tap preferred layer";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -147,7 +157,7 @@
 &kp TAB               &kp A  &kp S       &kp D                  &kp F          &kp G                                                &kp H            &kp J      &kp K             &kp L              &kp SEMICOLON  &kp SLASH
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V          &kp B                                                &kp N            &kp M      &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &kp BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &lt 3 DELETE   &lt 4 SPACE      &shiftmod
+                                                                &kp BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &lt 3 DELETE   &tp 4 SPACE      &shiftmod
                                                                                &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &modl 3 LCTRL  &mt LCTRL ENTER
             >;
         };
