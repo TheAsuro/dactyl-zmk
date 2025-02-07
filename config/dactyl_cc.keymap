@@ -163,10 +163,10 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q            &kp W            &kp E                  &kp R          &kp T                                                &umlaut RA(Y) U  &kp U      &kp I             &umlaut RA(P) O    &kp P          &kp MINUS
-&kp TAB               &umlaut RA(Q) A  &umlaut RA(S) S  &kp D                  &kp F          &kp G                                                &kp H            &kp J      &kp K             &kp L              &kp SEMICOLON  &kp SLASH
-&hwu LCTRL BACKSLASH  &kp Z            &kp X            &kp C                  &kp V          &kp B                                                &kp N            &kp M      &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
-                                       &bracket_y       &kp RIGHT_PARENTHESIS                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&excl_apo             &kp Q            &kp W            &kp E                  &kp R          &kp T                                                &kp Y            &umlaut RA(Y) U  &kp I             &umlaut RA(P) O    &kp P          &kp MINUS
+&kp TAB               &umlaut RA(Q) A  &umlaut RA(S) S  &kp D                  &kp F          &kp G                                                &kp H            &kp J            &kp K             &kp L              &kp SEMICOLON  &kp SLASH
+&hwu LCTRL BACKSLASH  &kp Z            &kp X            &kp C                  &kp V          &kp B                                                &kp N            &kp M            &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
+                                       &bracket_y       &kp RIGHT_PARENTHESIS                                                                                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                                &kp BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &lt 3 DELETE   &tp 4 SPACE      &shiftmod
                                                                                               &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &modl 3 LCTRL  &mt LCTRL ENTER
             >;
