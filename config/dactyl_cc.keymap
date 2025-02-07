@@ -186,11 +186,11 @@
 
         symbol_layer {
             bindings = <
-&kp TILDE  &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                   &kp SPACE       &kp N7  &kp N8  &kp N9      &kp RA(S)     &kp RA(Y)
-&kp HOME   &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT      &kp END                     &kp UNDERSCORE  &kp N4  &kp N5  &kp N6      &kp RA(P)     &kp RA(Q)
-&trans     &kp LC(LEFT)  &kp AMPERSAND  &kp ASTERISK  &kp LC(RIGHT)  &kp RA(N5)                  &kp F           &kp N1  &kp N2  &kp N3      &kp NUMBER_0  &trans
-                         &kp PAGE_DOWN  &kp PAGE_UP                                                                      &kp N0  &kp PERIOD
-                                                      &trans         &trans      &trans  &trans  &trans          &trans
+&kp TILDE  &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                   &trans     &kp N7  &kp N8  &kp N9     &kp SPACE     &trans
+&kp HOME   &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT      &kp END                     &kp DOT    &kp N4  &kp N5  &kp N6     &kp NUMBER_0  &trans
+&trans     &kp LC(LEFT)  &kp AMPERSAND  &kp ASTERISK  &kp LC(RIGHT)  &kp RA(N5)                  &kp COMMA  &kp N1  &kp N2  &kp N3     &kp F         &trans
+                         &kp PAGE_DOWN  &kp PAGE_UP                                                                 &kp T   &kp UNDER
+                                                      &trans         &trans      &trans  &trans  &trans     &trans
                                                                      &trans      &trans  &trans  &trans
             >;
         };
