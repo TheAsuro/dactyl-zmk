@@ -161,7 +161,7 @@
         };
 
         ue {
-            bindings = <&kp RA(Z)>;
+            bindings = <&kp RA(Y)>;
             key-positions = <7 3>;
         };
 
