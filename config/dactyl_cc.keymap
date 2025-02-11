@@ -177,8 +177,8 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R          &kp T                                                &kp Y            &none      &kp I             &none              &kp P          &kp MINUS
-&kp TAB               &none  &none       &kp D                  &kp F          &kp G                                                &kp H            &kp J      &kp K             &kp L              &kp SEMICOLON  &kp SLASH
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R          &kp T                                                &kp Y            &kp U      &kp I             &kp O              &kp P          &kp MINUS
+&kp TAB               &kp A  &kp S       &kp D                  &kp F          &kp G                                                &kp H            &kp J      &kp K             &kp L              &kp SEMICOLON  &kp SLASH
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V          &kp B                                                &kp N            &kp M      &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                 &kp BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &lt 3 DELETE   &tp 4 SPACE      &shiftmod
