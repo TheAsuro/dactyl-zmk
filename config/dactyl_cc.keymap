@@ -169,41 +169,49 @@
         ae {
             bindings = <&kp RA(Q)>;
             key-positions = <13 3>;
+            timeout-ms = <35>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
             key-positions = <9 3>;
+            timeout-ms = <35>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
             key-positions = <7 3>;
+            timeout-ms = <35>;
         };
 
         sz {
             bindings = <&kp RA(S)>;
             key-positions = <14 3>;
+            timeout-ms = <35>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <32 33>;
+            timeout-ms = <35>;
         };
 
         magic_r {
             bindings = <&to 5>;
             key-positions = <48 49>;
+            timeout-ms = <35>;
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
+            timeout-ms = <35>;
         };
 
         under {
             bindings = <&kp UNDER>;
             key-positions = <31 32>;
+            timeout-ms = <35>;
         };
     };
 
