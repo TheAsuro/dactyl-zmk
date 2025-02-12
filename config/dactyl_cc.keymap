@@ -213,6 +213,12 @@
             key-positions = <31 32>;
             timeout-ms = <35>;
         };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <19 20>;
+            timeout-ms = <35>;
+        };
     };
 
     keymap {
