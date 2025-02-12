@@ -186,14 +186,24 @@
             key-positions = <14 3>;
         };
 
-        underscore {
-            bindings = <&kp UNDER>;
+        minus {
+            bindings = <&kp MINUS>;
             key-positions = <32 33>;
         };
 
         magic_r {
             bindings = <&to 5>;
             key-positions = <48 49>;
+        };
+
+        quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <20 21>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <31 32>;
         };
     };
 
@@ -203,9 +213,9 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R   &kp T                                              &kp Y        &kp U            &kp I             &kp O              &kp P          &kp MINUS
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R   &kp T                                              &kp Y        &kp U            &kp I             &kp O              &kp P          &trans
 &kp TAB               &kp A  &kp S       &kp D                  &kp F   &kp G                                              &kp H        &kp J            &kp K             &kp L              &kp SEMICOLON  &kp SLASH
-&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                              &kp N        &kp M            &kp COMMA         &kp DOT            &apo_quot      &kp EQUAL
+&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                              &kp N        &kp M            &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                 &bsdel  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &tp 4 SPACE  &kp RIGHT_SHIFT
                                                                         &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &trans       &kp LCTRL
