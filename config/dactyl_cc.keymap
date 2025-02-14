@@ -170,30 +170,35 @@
             bindings = <&kp RA(Q)>;
             key-positions = <13 3>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
             key-positions = <9 3>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
             key-positions = <7 3>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         sz {
             bindings = <&kp RA(S)>;
             key-positions = <14 3>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <32 33>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         magic_r {
@@ -206,23 +211,27 @@
             bindings = <&qout>;
             key-positions = <20 21>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         under {
             bindings = <&kp UNDER>;
             key-positions = <31 32>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <19 20>;
             timeout-ms = <35>;
+            layers = <0>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <7 8>;
+            layers = <0>;
         };
     };
 
