@@ -241,12 +241,12 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R   &kp T                                              &kp Y        &kp U            &kp I             &kp O              &kp P          &trans
-&kp TAB               &kp A  &kp S       &kp D                  &kp F   &kp G                                              &kp H        &kp J            &kp K             &kp L              &kp SEMICOLON  &caps_word
-&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V   &kp B                                              &kp N        &kp M            &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
-                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &bsdel  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &tp 4 SPACE  &kp RIGHT_SHIFT
-                                                                        &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp LCTRL    &kp RCTRL
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R          &kp T                                              &kp Y        &kp U            &kp I             &kp O              &kp P          &trans
+&kp TAB               &kp A  &kp S       &kp D                  &kp F          &kp G                                              &kp H        &kp J            &kp K             &kp L              &kp SEMICOLON  &caps_word
+&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V          &kp B                                              &kp N        &kp M            &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
+                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                &kp BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &tp 4 SPACE  &kp RIGHT_SHIFT
+                                                                               &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp LCTRL    &kp RCTRL
             >;
         };
 
