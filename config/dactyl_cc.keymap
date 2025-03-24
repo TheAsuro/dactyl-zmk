@@ -205,38 +205,10 @@
             layers = <0>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <32 33>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
         magic_r {
             bindings = <&sl 5>;
             key-positions = <48 49>;
             timeout-ms = <35>;
-        };
-
-        quote {
-            bindings = <&qout>;
-            key-positions = <20 21>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
-        under {
-            bindings = <&kp UNDER>;
-            key-positions = <31 32>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <19 20>;
-            timeout-ms = <35>;
-            layers = <0>;
         };
     };
 
