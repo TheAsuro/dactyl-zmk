@@ -205,38 +205,10 @@
             layers = <0>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <32 33>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
         magic_r {
             bindings = <&sl 5>;
             key-positions = <48 49>;
             timeout-ms = <35>;
-        };
-
-        quote {
-            bindings = <&qout>;
-            key-positions = <20 21>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
-        under {
-            bindings = <&kp UNDER>;
-            key-positions = <31 32>;
-            timeout-ms = <35>;
-            layers = <0>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <19 20>;
-            timeout-ms = <35>;
-            layers = <0>;
         };
     };
 
@@ -251,7 +223,7 @@
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                              &kp N        &kp M                    &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                 &tap_unless LCTRL BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &tp 4 SPACE  &hwu RIGHT_SHIFT ESCAPE
-                                                                                             &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp LCTRL    &kp RCTRL
+                                                                                             &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp RWIN     &kp RCTRL
             >;
         };
 
@@ -290,10 +262,10 @@
 
         function_layer {
             bindings = <
-&kp N1  &kp N2  &kp N3        &kp N4      &kp N5   &kp NUMBER_6                  &kp N7        &kp N8     &kp N9                &kp N0                &trans     &kp PSCRN
-&kp F1  &kp F2  &kp F3        &kp F4      &kp F5   &kp F6                        &kp F7        &kp SLASH  &kp QUESTION          &kp DOUBLE_QUOTES     &kp MINUS  &trans
-&kp F7  &kp F8  &kp F9        &kp F10     &kp F11  &kp F12                       &trans        &trans     &trans                &trans                &trans     &sl 5
-                &kp NUMBER_0  &kp DELETE                                                                  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp N1  &kp N2  &kp N3        &kp N4      &kp N5   &kp NUMBER_6                  &kp N7        &kp N8     &kp N9        &kp N0     &trans     &kp PSCRN
+&kp F1  &kp F2  &kp F3        &kp F4      &kp F5   &kp F6                        &trans        &kp SLASH  &kp QUESTION  &kp UNDER  &kp MINUS  &trans
+&kp F7  &kp F8  &kp F9        &kp F10     &kp F11  &kp F12                       &trans        &qout      &trans        &trans     &trans     &sl 5
+                &kp NUMBER_0  &kp DELETE                                                                  &trans        &trans
                                           &trans   &trans        &trans  &trans  &trans        &trans
                                                    &trans        &trans  &trans  &kp LEFT_GUI
             >;
