@@ -222,7 +222,7 @@
 &kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                              &kp H        &kp J                    &kp K             &kp L              &kp SEMICOLON  &caps_word
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                              &kp N        &kp M                    &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &tap_unless LCTRL BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &tp 4 SPACE  &hwu RIGHT_SHIFT ESCAPE
+                                                                &tap_unless LCTRL BACKSPACE  &lt 4 ENTER   &hwu LSHFT SPACE        &ht_lay 3 3  &lt 4 SPACE  &hwu RIGHT_SHIFT ESCAPE
                                                                                              &lt 3 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp RWIN     &kp RCTRL
             >;
         };
