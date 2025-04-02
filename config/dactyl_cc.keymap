@@ -200,7 +200,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <14 3>;
+            key-positions = <14 21>;
             timeout-ms = <35>;
             layers = <0>;
         };
