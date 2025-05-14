@@ -200,7 +200,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <14 21>;
+            key-positions = <15 20>;
             timeout-ms = <35>;
             layers = <0>;
         };
@@ -234,7 +234,7 @@
 &kp N3  &kp LEFT_CONTROL  &kp Z         &kp X  &kp C   &kp V                          &trans  &trans  &trans  &trans  &trans  &trans
                           &kp NUMBER_4  &kp M                                                         &trans  &trans
                                                &trans  &kp SPACE   &kp ENTER  &trans  &trans  &trans
-                                                       &kp ESCAPE  &trans     &trans  &to 0
+                                                       &kp ESCAPE  &trans     &trans  &trans
             >;
         };
 
