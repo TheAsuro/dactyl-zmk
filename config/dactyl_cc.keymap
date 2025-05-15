@@ -218,7 +218,7 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                              &kp Y        &kp U                    &kp I             &kp O              &kp P          &trans
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                              &kp Y        &kp U                    &kp I             &kp O              &kp P          &kp PRINTSCREEN
 &kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                              &kp H        &kp J                    &kp K             &kp L              &kp SEMICOLON  &caps_word
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                              &kp N        &kp M                    &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
