@@ -225,12 +225,12 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                              &kp Y        &kp U                    &kp I             &kp O              &kp P          &kp PRINTSCREEN
-&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                              &kp H        &kp J                    &kp K             &kp L              &kp SEMICOLON  &caps_word
-&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                              &kp N        &kp M                    &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
-                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                &tap_unless LCTRL BACKSPACE  &lt 3 ENTER   &hwu LSHFT SPACE        &ht_lay 2 2  &lt 3 SPACE  &hwu RIGHT_SHIFT ESCAPE
-                                                                                             &lt 2 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp RWIN     &kp RCTRL
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                           &kp Y        &kp U                    &kp I             &kp O              &kp P          &kp PRINTSCREEN
+&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                           &kp H        &kp J                    &kp K             &kp L              &kp SEMICOLON  &caps_word
+&hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                           &kp N        &kp M                    &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
+                             &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                &tap_unless LCTRL BACKSPACE  &lt 3 ENTER   &hwu LSHFT SPACE        &mo 2     &lt 3 SPACE  &hwu RIGHT_SHIFT ESCAPE
+                                                                                             &lt 2 ESCAPE  &hwu LEFT_ALT LEFT_GUI  &kp RWIN  &kp RCTRL
             >;
         };
 
@@ -247,11 +247,11 @@
 
         symbol_layer {
             bindings = <
-&tilde         &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &trans
-&kp HOME       &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT      &kp END                    &kp F   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&kp PAGE_DOWN  &kp LC(LEFT)  &kp AMPERSAND  &kp ASTERISK  &kp LC(RIGHT)  &kp PG_UP                  &trans  &kp N8        &kp COMMA     &kp PERIOD    &kp NUMBER_9  &trans
-                             &kp PLUS       &kp MINUS                                                                     &kp T         &kp UNDER
-                                                          &trans         &trans     &trans  &trans  &trans  &trans
+&tilde         &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                  &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &trans
+&kp HOME       &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT      &kp END                    &kp MINUS  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp PAGE_DOWN  &kp LC(LEFT)  &kp AMPERSAND  &kp ASTERISK  &kp LC(RIGHT)  &kp PG_UP                  &kp PLUS   &kp N8        &kp COMMA     &kp PERIOD    &kp NUMBER_9  &trans
+                             &kp F          &kp SLASH                                                                        &kp T         &kp UNDER
+                                                          &trans         &trans     &trans  &trans  &trans     &trans
                                                                          &trans     &trans  &trans  &trans
             >;
         };
