@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFTMOD";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sl 4>;
+            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sl 5>;
         };
 
         bracket_y: bracket_y {
@@ -213,7 +213,7 @@
         };
 
         magic_r {
-            bindings = <&sl 4>;
+            bindings = <&sl 5>;
             key-positions = <48 49>;
             timeout-ms = <35>;
         };
@@ -264,6 +264,17 @@
                 &kp NUMBER_0  &kp DELETE                                                                  &kp C_PLAY_PAUSE  &kp C_FF
                                           &trans   &trans        &trans  &trans  &trans        &trans
                                                    &trans        &trans  &trans  &kp LEFT_GUI
+            >;
+        };
+
+        Function_Layer_R {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp N7        &kp N8     &kp N9            &kp N0            &kp RA(N5)  &kp PSCRN
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp SLASH  &kp QUESTION      &kp UNDER         &kp MINUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &qout      &kp C_AC_BACK     &kp C_AC_FORWARD  &trans      &trans
+                &trans  &trans                                                           &kp C_PLAY_PAUSE  &kp C_FF
+                                &trans  &trans  &trans  &trans  &trans        &trans
+                                        &trans  &trans  &trans  &kp LEFT_GUI
             >;
         };
 
