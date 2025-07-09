@@ -186,28 +186,28 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <13 3>;
+            key-positions = <13 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
-            key-positions = <9 3>;
+            key-positions = <9 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
-            key-positions = <7 3>;
+            key-positions = <7 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <15 20>;
+            key-positions = <14 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
