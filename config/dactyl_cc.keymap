@@ -186,28 +186,28 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <13 3>;
+            key-positions = <13 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
-            key-positions = <9 3>;
+            key-positions = <9 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
-            key-positions = <7 3>;
+            key-positions = <7 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <15 20>;
+            key-positions = <14 11>;
             timeout-ms = <35>;
             layers = <0>;
         };
@@ -236,12 +236,12 @@
 
         epic_gamer_layer {
             bindings = <
-&kp N1  &kp TAB           &kp Q   &kp W  &kp E  &kp R                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp G   &kp LEFT_SHIFT    &kp A   &kp S  &kp D  &kp F                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp Z   &kp X  &kp C  &kp V                             &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &kp M                                                           &trans  &trans
-                                         &mo 3  &kp SPACE   &kp ENTER     &trans  &trans  &trans
-                                                &kp ESCAPE  &kp LEFT_ALT  &trans  &trans
+&kp N1  &kp TAB           &kp Q     &kp W  &kp E  &kp R                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp G   &kp LEFT_SHIFT    &kp A     &kp S  &kp D  &kp F                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp Z     &kp X  &kp C  &kp V                             &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LGUI  &kp M                                                           &trans  &trans
+                                           &mo 3  &kp SPACE   &kp ENTER     &trans  &trans  &trans
+                                                  &kp ESCAPE  &kp LEFT_ALT  &trans  &trans
             >;
         };
 
@@ -269,10 +269,10 @@
 
         Function_Layer_R {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp N7        &kp N8     &kp N9            &kp N0            &kp RA(N5)  &kp PSCRN
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp SLASH  &kp QUESTION      &kp UNDER         &kp MINUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &qout      &kp C_AC_BACK     &kp C_AC_FORWARD  &trans      &kp PAUSE_BREAK
-                &trans  &trans                                                           &kp C_PLAY_PAUSE  &kp C_FF
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp N7        &kp N8     &kp N9             &kp N0           &kp RA(N5)  &kp PSCRN
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp SLASH  &kp QUESTION       &kp UNDER        &kp MINUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &qout      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &kp PAUSE_BREAK
+                &trans  &trans                                                           &kp C_PLAY_PAUSE   &kp C_FF
                                 &trans  &trans  &trans  &trans  &trans        &trans
                                         &trans  &trans  &trans  &kp LEFT_GUI
             >;
