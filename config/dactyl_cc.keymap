@@ -225,8 +225,8 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                           &kp Y        &kp U                 &kp I             &kp O              &kp P          &kp PRINTSCREEN
-&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                           &kp H        &kp J                 &kp K             &kp L              &kp SEMICOLON  &caps_word
+&excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                           &kp Y        &kp U                 &kp I             &kp O              &kp P          &caps_word
+&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                           &kp H        &kp J                 &kp K             &kp L              &kp SEMICOLON  &lt 6 DOUBLE_QUOTES
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                           &kp N        &kp M                 &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                 &tap_unless LCTRL BACKSPACE  &lt 3 ENTER   &hwu LSHFT SPACE        &mo 2     &lt 4 SPACE  &hwu RIGHT_SHIFT TAB
@@ -269,10 +269,10 @@
 
         Function_Layer_R {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp N7        &kp N8     &kp N9             &kp N0           &kp RA(N5)  &kp PSCRN
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp SLASH  &kp QUESTION       &kp UNDER        &kp MINUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &qout      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &kp PAUSE_BREAK
-                &trans  &trans                                                           &kp C_PLAY_PAUSE   &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans  &trans             &trans           &kp RA(N5)  &kp PSCRN
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans  &trans             &trans           &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &kp PAUSE_BREAK
+                &trans  &trans                                                        &kp C_PLAY_PAUSE   &kp C_NEXT
                                 &trans  &trans  &trans  &trans  &trans        &trans
                                         &trans  &trans  &trans  &kp LEFT_GUI
             >;
@@ -286,6 +286,17 @@
                           &sys_reset     &bootloader                                                                         &sys_reset     &bootloader
                                                         &trans         &trans      &trans  &trans  &trans     &trans
                                                                        &trans      &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans    &trans        &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH  &kp QUESTION  &kp MINUS  &kp UNDER  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans        &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans        &trans                                                        &trans  &trans
+                                           &trans     &trans  &trans  &trans  &trans  &trans
+                                                      &trans  &trans  &trans  &trans
             >;
         };
     };
