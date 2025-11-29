@@ -15,14 +15,6 @@
 
 / {
     behaviors {
-        bsdel: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         excl_apo: excl_apo {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL_APO";
@@ -51,13 +43,6 @@
             tapping-term-ms = <200>;
         };
 
-        shiftmod: shiftmod {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFTMOD";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sl 5>;
-        };
-
         bracket_y: bracket_y {
             compatible = "zmk,behavior-mod-morph";
             label = "BRACKET_Y";
@@ -65,25 +50,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        tp: tap_preferred_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "tap preferred layer";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-        };
-
-        ht_lay: ht_lay {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_LAY";
-            bindings = <&mo>, <&tog>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
         };
 
         tap_unless: tap_unless {
@@ -95,6 +61,15 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
+        };
+
+        quot_or_layer: quot_or_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUOT_OR_LAYER";
+            bindings = <&mo>, <&qout>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -226,7 +201,7 @@
             display-name = "Default";
             bindings = <
 &excl_apo             &kp Q  &kp W       &kp E                  &kp R                        &kp T                                           &kp Y        &kp U                 &kp I             &kp O              &kp P          &caps_word
-&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                           &kp H        &kp J                 &kp K             &kp L              &kp SEMICOLON  &lt 6 DOUBLE_QUOTES
+&kp TAB               &kp A  &kp S       &kp D                  &kp F                        &kp G                                           &kp H        &kp J                 &kp K             &kp L              &kp SEMICOLON  &quot_or_layer 6 0
 &hwu LCTRL BACKSLASH  &kp Z  &kp X       &kp C                  &kp V                        &kp B                                           &kp N        &kp M                 &kp COMMA         &kp DOT            &kp EQUAL      &apo_quot
                              &bracket_y  &kp RIGHT_PARENTHESIS                                                                                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                                                 &tap_unless LCTRL BACKSPACE  &lt 3 ENTER   &hwu LSHFT SPACE        &mo 2     &lt 4 SPACE  &hwu RIGHT_SHIFT TAB
