@@ -247,12 +247,12 @@
 
         symbol_layer {
             bindings = <
-&tilde         &kp AT_SIGN   &kp HASH       &kp DOLLAR    &kp PERCENT    &kp CARET                  &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &trans
-&kp HOME       &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT      &kp END                    &kp MINUS  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&kp PAGE_DOWN  &kp LC(LEFT)  &kp AMPERSAND  &kp ASTERISK  &kp LC(RIGHT)  &kp PG_UP                  &kp PLUS   &kp N8        &kp COMMA     &kp PERIOD    &kp NUMBER_9  &trans
-                             &kp F          &kp SLASH                                                                        &kp T         &kp UNDER
-                                                          &trans         &trans     &trans  &trans  &trans     &trans
-                                                                         &trans     &trans  &trans  &trans
+&tilde         &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET                  &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &trans
+&kp HOME       &kp LEFT      &kp DOWN  &kp UP      &kp RIGHT      &kp END                    &kp MINUS  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp PAGE_DOWN  &kp LC(LEFT)  &trans    &trans      &kp LC(RIGHT)  &kp PG_UP                  &kp PLUS   &kp N8        &kp COMMA     &kp PERIOD    &kp NUMBER_9  &trans
+                             &kp F     &kp SLASH                                                                      &kp T         &kp UNDER
+                                                   &trans         &trans     &trans  &trans  &trans     &trans
+                                                                  &trans     &trans  &trans  &trans
             >;
         };
 
@@ -289,14 +289,14 @@
             >;
         };
 
-        layer_6 {
+        more_symbols {
             bindings = <
-&trans  &trans    &trans        &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH  &kp QUESTION  &kp MINUS  &kp UNDER  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans        &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans        &trans                                                        &trans  &trans
-                                           &trans     &trans  &trans  &trans  &trans  &trans
-                                                      &trans  &trans  &trans  &trans
+&trans  &trans    &trans         &trans        &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH  &kp QUESTION   &kp MINUS     &kp UNDER  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp AMPERSAND  &kp ASTERISK  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans         &trans                                                           &trans  &trans
+                                               &trans     &trans  &trans  &trans  &trans  &trans
+                                                          &trans  &trans  &trans  &trans
             >;
         };
     };
