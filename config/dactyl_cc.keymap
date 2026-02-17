@@ -266,12 +266,12 @@
 
         more_symbols {
             bindings = <
-&trans  &trans    &trans         &trans        &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH  &kp QUESTION   &kp MINUS     &kp UNDER  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &kp AMPERSAND  &kp ASTERISK  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans         &trans                                                           &trans  &trans
-                                               &trans     &trans  &trans  &trans  &trans  &trans
-                                                          &trans  &trans  &trans  &trans
+&trans  &trans             &trans         &trans        &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH           &kp QUESTION   &kp MINUS     &kp UNDER  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(SEMICOLON)  &kp AMPERSAND  &kp ASTERISK  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans         &trans                                                           &trans  &trans
+                                                        &trans     &trans  &trans  &trans  &trans  &trans
+                                                                   &trans  &trans  &trans  &trans
             >;
         };
     };
